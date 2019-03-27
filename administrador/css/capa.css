@@ -1,0 +1,16 @@
+body { background:none; }
+
+.capa h1 { padding:0; margin:0 auto; margin-top:100px; line-height:1; font-size:6em; color:#9e9ba4; font-weight:900; text-decoration:none; position:relative; display:table; overflow:hidden; outline:none; }
+.capa h1::after { width:100%; height:16px; margin-top:-8px; position:absolute; top:50%; right:0; background:#3d4c5a; content:''; -webkit-transform:translate3d(-100%,0,0); transform:translate3d(-100%,0,0); -webkit-transition:-webkit-transform 0.8s; transition:transform 0.8s; -webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1); transition-timing-function:cubic-bezier(0.7,0,0.3,1); }
+.capa h1::before { width:0%; position:absolute; z-index:2; color:#3d4c5a; content:attr(data-letters); -webkit-transition:width 0.8s 0.3s; transition:width 0.8s 0.6s; white-space:nowrap; overflow:hidden; }
+
+.capa h1.h1H { color:#c5c2b8; }
+.capa h1.h1H::after { -webkit-transform:translate3d(100%,0,0); transform:translate3d(100%,0,0); }
+.capa h1.h1H::before { width:100%; }
+
+.capa h5 { padding:6px 0; letter-spacing:2px; font-size:13px; font-weight:100; text-align:center; color:#3d4c5a;}
+
+@media(max-width:767px) {
+	.capa h1 { font-size:2em; }
+	.capa h5 { font-size:.7em; }
+}

@@ -1,0 +1,31 @@
+[
+	{
+		"lat":"-27.140473",
+		"data":{
+			"title": "Atlantico Sul",
+			"subtitle": "Construtora Requinte",
+			"address": "Rua 241, 340 - Meia Praia - Itapema",
+			"images":[
+				"Dmarco-El_Shaday-Fachada-01.jpg",
+				"Dmarco-El_Shaday-Terreo_Lazer-01.jpg",
+				"Dmarco-El_Shaday-Academia-01.jpg"
+			]
+		},
+		"title":"Construtora Requinte, Atlantico Sul",
+		"lng":"-48.591935"
+	},{
+		"lat":"-27.118597",
+		"data":{
+			"title": "El Shaday",
+			"subtitle": "Dmarco Empreendimentos",
+			"address": "Rua 241, 340 - Meia Praia - Itapema",
+			"images":[
+				"Viga-Estudo-Fachada-01.jpg",
+				"Dmarco-El_Shaday-Festas-01.jpg",
+				"Dmarco-El_Shaday-Suite-01.jpg"
+			]
+		},
+		"title":"Dmarco Empreendimentos, El Shaday",
+		"lng":"-48.591732"
+	}
+]

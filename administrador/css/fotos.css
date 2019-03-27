@@ -1,0 +1,121 @@
+body { background:none; color:#3d4c5a; }
+
+.fotos-bg { width:100%; padding-bottom:100px; }
+.fotos-bg h1 { margin:12px 0; font-family:"Roboto"; font-weight:300; }
+.fotos-bg h1 b { font-weight:600; color:#3d4c5a; position:relative; }
+.fotos-bg h1 b:before { content: ""; width:3px; height:40%; background:#3d4c5a; position:absolute; right:-10px; bottom:0; }
+.fotos-bg h1 b:after { content:""; width:40%; height:3px; background:#3d4c5a; position:absolute; right:-10px; bottom:0; }
+
+.fotos-bg .listagem-buttons a:nth-child(1) { width:100%; height:56px; line-height:56px!important; background:rgba(61,76,90,0.4); border:none; border-radius:0; font-size:16px; font-weight:500; color:rgba(255, 255, 255, .7); text-align:center; text-transform:uppercase; letter-spacing:1px; cursor:pointer; display:inline-block; overflow:hidden; -webkit-backface-visibility:hidden; -moz-backface-visibility:hidden; backface-visibility:hidden; position:relative; outline:none; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s; }
+.fotos-bg .listagem-buttons a:nth-child(1):hover { background:rgb(61,76,90); }
+.fotos-bg .listagem-buttons a:nth-child(1) span { width:100%; height:100%; display:inline-block; -webkit-transition:all 0.3s; -webkit-backface-visibility:hidden; -moz-transition:all 0.3s; -moz-backface-visibility:hidden; transition:all 0.3s; backface-visibility:hidden; }
+
+.fotos-bg .listagem-buttons a:nth-child(1):after { content:''; position:absolute; z-index:-1; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s; }
+.fotos-bg .listagem-buttons a:nth-child(1):before { width:100%; height:100%; line-height:56px; font-family:FontAwesome; font-size:180%; color:#FFF; position:absolute; top:-100%; left:0; content:"\f1da"; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s; -webkit-font-smoothing:antialiased; }
+.fotos-bg .listagem-buttons a:nth-child(1):active { background:#3d4c5a; top:2px; }
+.fotos-bg .listagem-buttons a:nth-child(1):active:before { color:#FFF; }
+
+.fotos-bg .listagem-buttons a:nth-child(1):hover span { -webkit-transform:translateY(300%); -moz-transform:translateY(300%); -ms-transform:translateY(300%); transform:translateY(300%); }
+.fotos-bg .listagem-buttons a:nth-child(1):hover:before { top:0; }
+
+
+.fotos-bg .fotos { margin-top:30px; padding-top:20px; padding-bottom:20px; background:#FFF; }
+.fotos-bg .fotos .item { height:400px; padding-left:0; padding-right:0; position:relative; background-size:120%; background-position:center; background-repeat:no-repeat; transition:all .3s; overflow:hidden; }
+.fotos-bg .fotos .item:before { width:100%; height:100%; background:rgba(0,0,0,.5); opacity:.7; position:absolute; top:0; left:0; content:""; transition:all .3s; }
+.fotos-bg .fotos .item:hover { background-size:135%; transition:all .3s; }
+.fotos-bg .fotos .item:hover::before { opacity:.9; transition:all .3s; }
+
+.fotos-bg .fotos .item h5 { margin:30% 0 0 0; font:14px "Roboto", sans-serif; font-weight:300; color:rgba(255,255,255,.7); text-align:center; position:relative; z-index:2; }
+.fotos-bg .fotos .item h5:after { width:10%; height:3px; background:rgba(255,255,255,.3); position:absolute; left:45%; bottom:-11px; content:""; }
+.fotos-bg .fotos .item h1 { margin-top:20px; text-align:center; font:30px "Roboto", sans-serif; font-weight:300; color:rgba(255,255,255,0.8); position:relative; z-index:2; }
+
+.fotos-bg .fotos .item ul { margin:0 auto; padding:0; text-align:center; }
+.fotos-bg .fotos .item ul li { display:inline-block; }
+.fotos-bg .fotos .item ul li button { margin:.2em; padding:0.35em 0.4em; background:none; border:3px solid rgba(255,255,255,0); font-size:1.9em; color:rgba(255, 255, 255, .3); text-decoration:none; position:relative; display:inline-block; overflow:visible; -webkit-transition:color 0.7s; transition:color 0.7s, border .7s; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); border-radius:100%; cursor:pointer; }
+.fotos-bg .fotos .item ul li button.cbutton--click, .fotos-bg .fotos .item ul li button:focus { outline:none; color:#FFF; }
+
+.fotos-bg .fotos .item:hover ul li button { border:3px solid rgba(255,255,255,0.1); color:rgba(255, 255, 255, .7); }
+
+.cbutton__icon {
+display: block;
+}
+
+.cbutton__text {
+position: absolute;
+opacity: 0;
+pointer-events: none;
+}
+
+.fotos-bg .fotos .item ul li button::after {
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -35px 0 0 -35px;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+content: '';
+opacity: 0;
+pointer-events: none;
+}
+
+.cbutton--effect-novak::after {
+background:#FFF;
+}
+
+.cbutton--effect-novak.cbutton--click::after {
+-webkit-animation: anim-effect-novak 0.5s forwards;
+animation: anim-effect-novak 0.5s forwards;
+}
+
+@-webkit-keyframes anim-effect-novak {
+0% {
+opacity: 1;
+-webkit-transform: scale3d(0.1, 0.1, 1);
+transform: scale3d(0.1, 0.1, 1);
+}
+100% {
+opacity: 0;
+-webkit-transform: scale3d(8, 8, 1);
+transform: scale3d(8, 8, 1);
+}
+}
+
+@keyframes anim-effect-novak {
+0% {
+opacity: 1;
+-webkit-transform: scale3d(0.1, 0.1, 1);
+transform: scale3d(0.1, 0.1, 1);
+}
+100% {
+opacity: 0;
+-webkit-transform: scale3d(8, 8, 1);
+transform: scale3d(8, 8, 1);
+}
+}
+
+.fotos-bg .fotos .item .dropify-wrapper { height:100%; }
+.fotos-bg .fotos .item button[type="submit"] { width:40%; padding:12px 0; background:#3d4c5a; border:2px solid rgb(49, 72, 93); position:absolute; left:30%; bottom:-1000px; z-index:9999; font:20px "Roboto", sans-serif; font-weight:300; color:#a3abb4; }
+   
+
+.modal-backdrop.in { opacity:.8; }
+/*************************************************
+**************** MODAL - LEGENDA *****************
+*************************************************/
+#modal-editar-legenda .modal-content { background:#3d4c5a; color:#FFF; border:none; box-shadow:none; border-radius:0; }
+#modal-editar-legenda .modal-content .modal-header, #modal-editar-legenda .modal-content .modal-footer { border-color:#3a3d40; text-align:center; }
+#modal-editar-legenda .modal-content .modal-header h4 { font-weight: 100; letter-spacing:3px; }
+#modal-editar-legenda .modal-content form input { padding:15px; background:#333c44; border:none; border-radius:0; color:#FFF; font-weight:100; }
+#modal-editar-legenda .modal-content .modal-footer .btn-primary { padding:15px 20px; background:#5e6f7f; font-size:.8em; color:rgba(255, 255, 255, 0.9); font-weight:300; text-transform:uppercase; border:none; border-radius:0; }
+#modal-editar-legenda .modal-content .modal-footer .btn-secondary { padding:15px 20px; background: #465767; border:none; border-radius:0; font-size:.8em; color:rgba(255, 255, 255, .6); font-weight:300; text-transform:uppercase; }
+
+/*************************************************
+************ MODAL - CONFIRMAR DELETE ************
+*************************************************/
+#confirmar-delete .modal-content { background:#d21f26; color:#FFF; border:none; box-shadow:none; border-radius:0; }
+#confirmar-delete .modal-content .modal-header, #confirmar-delete .modal-content .modal-footer { border-color:#c12127; text-align:center; }
+#confirmar-delete .modal-content .modal-header { padding:20px 10px; font:25px "Roboto", sans-serif; font-weight:100; text-align:center; color:#FFF; }
+#confirmar-delete .modal-content a { padding:15px 30px; margin:0; margin-right:10px;  font:13px "Roboto", sans-serif; font-weight:300; color:rgba(255,255,255,0.5); text-transform:uppercase; text-decoration:none; border:none; border-radius:0; box-shadow:none; display:inline-block; transition:color .3s; cursor:pointer; }
+#confirmar-delete .modal-content a:hover, #confirmar-delete .modal-content button:focus { color:#FFF; }
+#confirmar-delete .modal-content a:first-child { background:#d9534f; }
+#confirmar-delete .modal-content a:last-child { background:#9c2622; color:#FFF; }

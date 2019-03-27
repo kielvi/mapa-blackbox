@@ -1,0 +1,14 @@
+* { font-family:'Roboto', sans-serif; padding:0; margin:0; text-decoration:none; -webkit-box-sizing:border-box; box-sizing:border-box; }
+
+::-moz-selection { color:#FFF; background:#3d4c5a; }
+::selection { color:#FFF; background:#3d4c5a; }
+
+body { background-color:#3d4c5a; font-family:'Roboto', sans-serif; color:#FFF; text-decoration:none; overflow-y:visible; }
+body.index { background-color:#e8ebf0; }
+
+.unvisible { visibility:hidden; }
+.bounceInLeft, .fadeIn, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUp, .fadeInLeft, .fadeInRight { animation-delay:.5s; -webkit-animation-delay:.5s; visibility:visible; }
+.delay05s { transition-delay:.5s; animation-delay:.5s; }
+.delay1s { transition-delay:1s; animation-delay:1s; }
+.delay15s { transition-delay:1.5s; animation-delay:1.5s; }
+.delay2s { transition-delay:2s; animation-delay:2s; }

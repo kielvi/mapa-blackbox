@@ -1,0 +1,170 @@
+::-webkit-scrollbar { width:10px; height:10px; }
+::-webkit-scrollbar-button { width:0px; height:0px; }
+::-webkit-scrollbar-thumb { background:#232c33; border:0px none #ffffff; border-radius:50px; }
+::-webkit-scrollbar-thumb:hover { background:#232c33; }
+::-webkit-scrollbar-thumb:active { background:#232c33; }
+::-webkit-scrollbar-track { background:none; border:0px none #ffffff; border-radius:39px; }
+::-webkit-scrollbar-track:hover { background:none; }
+::-webkit-scrollbar-track:active { background:none; }
+::-webkit-scrollbar-corner { background:transparent; }
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition:background-color 5000s ease-in-out 0s; }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+
+.conteudo-all { width:100%; height:100%; overflow:hidden; }/*rgba(0,0,0,0.6)*/
+.conteudo-all::before { width:100%; height:100%; position:fixed; top:0; left:0; z-index:10; background:rgba(0,0,0,0.6); opacity:0; content:''; -webkit-transition:opacity 0.3s, -webkit-transform 0s 0.3s; transition:opacity 0.3s, transform 0s 0.3s; -webkit-transform:translate3d(100%,0,0); transform:translate3d(100%,0,0); }
+.conteudo { width:100%; height:100%; overflow:visible; overflow-x:hidden; position:relative; -webkit-overflow-scrolling:touch; overflow-y:scroll; -webkit-transition:-webkit-transform 0.3s; transition:transform 0.3s; }
+
+.conteudo iframe { width:100%; min-height:100vh; }
+
+/*************************************************
+********************* LOGIN **********************
+*************************************************/
+.login { height:450px; margin-top:calc(50vh - 225px); }
+.login svg.login-logo { height:140px; margin:30px auto; display:block; stroke-dasharray:2028; }
+.login svg.login-logo path { stroke:#FFF; stroke-width:1px; stroke-dasharray:2028; stroke-dashoffset:2028; fill-opacity:0; animation-delay:2s; animation-name:svgLogoEmpresa; animation-duration:4s; animation-fill-mode: forwards; }
+.login form { height:240px; padding:20px; background:#FFF; border-radius:5px; }
+.login form .form-group { margin-bottom:20px; }
+.login form input { padding:10px 0; border:none; box-shadow:none; border-radius:0; border-bottom:1px solid rgba(0,0,0,0.1); }
+.login form input:focus { box-shadow:none; border-color:#3d4c5a; color:#3d4c5a; }
+.login form button[type="button"] { width:calc(65% - 10px); padding:15px 0; margin:0; margin-right:10px; background:#3d4c5a; border:none; border-radius:0; box-shadow:none; font-size:12px; font-weight:400; color:rgba(255,255,255,0.5); text-transform:uppercase; display:inline-block; }
+.login form button[type="submit"] { width:35%; padding:15px 0; margin:0; background:#d32027; border:none; border-radius:0; box-shadow:none; font-size:12px; font-weight:400; color:#FFF; text-transform:uppercase; display:inline-block; }
+
+
+.login form ul { padding:0; margin:0 auto; list-style:none; }
+.login form ul li { padding:0; margin:0 auto; position:relative; }
+
+.login form label { padding:0 0 0 36px; position:relative; font:1em "Roboto", sans-serif; color:rgb(153, 153, 153); display:inline-block; vertical-align:top; cursor:pointer; -webkit-transition:color 0.3s; transition:color 0.3s; }
+.login form label::before { content:''; border:2px solid #999; -webkit-transition:opacity 0.3s; transition:opacity 0.3s; }
+
+.login form input[type="radio"], .login form label::before { width:30px; height:30px; margin-top:-25px; position:absolute; top:100%; left:0; cursor:pointer; }
+.login form input[type="radio"] { display:inline-block; z-index:100; vertical-align:middle; opacity:0; -webkit-appearance:none; }
+
+.login form label::before { border-radius:50%; }
+.login form input[type="radio"]:checked + label { color:#3d4c5a; } 
+.login form input[type="radio"]:checked + label::before { opacity:0.8; border-color:#3d4c5a; }
+
+.login form svg { width:30px; height:30px; margin-top:-12px; position:absolute; top:23%; left:1px; pointer-events:none; }
+.login form svg path { stroke:#ec1b23!important; stroke-width:8px; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+
+@keyframes svgLogoEmpresa {
+	0% { fill-opacity:0; stroke-dashoffset:2028; }
+	50% { fill-opacity:0; stroke:#FFF; }
+	100% { fill-opacity:1; stroke-dashoffset:0; stroke:none; }
+}
+
+/*************************************************
+************** MODAL - ERRO NO LOGIN *************
+*************************************************/
+#modal-login-error .modal-content { background:#d21f26; color:#FFF; border:none; box-shadow:none; border-radius:0; }
+#modal-login-error .modal-content .modal-header { border-color:#c12127; }
+#modal-login-error .modal-content .modal-header h4 { padding:0 10px; font:32px "Roboto", sans-serif; font-weight:400; text-align:center; color:#a70d13; }
+#modal-login-error .modal-content .modal-body p { font:21px "Roboto", sans-serif; font-weight:100; text-align:center; color:#e09a9d; }
+
+
+/*************************************************
+************* MODAL - ESQUECI A SENHA ************
+*************************************************/
+#modal-esqueci .modal-content { background:#3d4c5a; color:#FFF; border:none; box-shadow:none; border-radius:0; }
+#modal-esqueci .modal-content .modal-header, #modal-esqueci .modal-content .modal-footer { padding:15px 5px; border-color:#2c3742; }
+#modal-esqueci .modal-content .modal-header h4 { padding:0 10px; font:18px "Roboto", sans-serif; font-weight:400; }
+#modal-esqueci .modal-content .modal-header button[type="button"] { padding:0; background:none; font-size:21px; font-weight:700; color:#FFF; text-shadow:0 1px 0 #2c3742; }
+#modal-esqueci .modal-content form input { padding:0; background:none; font:15px "Roboto", sans-serif; font-weight:100; color:#8697a7; border:none; border-bottom:1px solid #526679; box-shadow:none; border-radius:0; }
+#modal-esqueci .modal-content button { padding:15px 30px; margin:0; margin-right:10px;  font-size:12px; font-weight:400; color:rgba(255,255,255,0.5); text-transform:uppercase; border:none; border-radius:0; box-shadow:none; display:inline-block; transition:color .3s; }
+#modal-esqueci .modal-content button:hover, #modal-esqueci .modal-content button:focus { color:#FFF; }
+#modal-esqueci .modal-content button[type="button"] { background:#5b6b79; }
+#modal-esqueci .modal-content button[type="submit"] { background:#d21f26; }
+
+#modal-esqueci-error .modal-content { background:#d21f26; color:#FFF; border:none; box-shadow:none; border-radius:0; }
+#modal-esqueci-error .modal-content .modal-header { border-color:#c12127; }
+#modal-esqueci-error .modal-content .modal-header h4 { padding:0 10px; font:32px "Roboto", sans-serif; font-weight:400; text-align:center; color:#a70d13; }
+#modal-esqueci-error .modal-content .modal-body p { font:21px "Roboto", sans-serif; font-weight:100; text-align:center; color:#e09a9d; }
+
+#modal-esqueci-sucess .modal-content { background:#FFF; color:#000; border:none; box-shadow:none; border-radius:0; }
+#modal-esqueci-sucess .modal-content .modal-header { border-color:#e6e6e6; }
+#modal-esqueci-sucess .modal-content .modal-header h4 { padding:0 10px; font:32px "Roboto", sans-serif; font-weight:400; text-align:center; color:#6d6d6d; }
+#modal-esqueci-sucess .modal-content .modal-body p { font:21px "Roboto", sans-serif; font-weight:100; text-align:center; color:#7b7b7b; }
+
+
+/*************************************************
+********************* HEADER *********************
+*************************************************/
+header { width:100%; height:80px; background:#FFF; border-bottom:1px solid #ddd; display:block; }
+
+/* Menu Button */
+.menu-button {  width:55px; height:51px; background:transparent; border:none; position:absolute; z-index:1000; top:14px; left:15px; font-size:1.5em; color:transparent; text-indent:2.5em; }
+.menu-button::before { position:absolute; top:0.5em; right:0.5em; bottom:0.5em; left:0.5em; background: linear-gradient(#3d4c5a 20%, transparent 20%, transparent 40%, #3d4c5a 40%, #3d4c5a 60%, transparent 60%, transparent 80%, #3d4c5a 80%); content:''; transition:all .4s; }
+
+
+/* Close Button */
+.close-button { width:16px; height:16px; position:absolute; top:1em; right:1em; z-index:1001; background:transparent; color:transparent; border:none; overflow:hidden; text-indent:16px; transition:all .4s; }
+.close-button::before, .close-button::after { width:2px; height:100%; position:absolute; top:0; left:50%; background:#FFF; content:''; }
+.close-button::before { -webkit-transform:rotate(45deg); transform:rotate(45deg); }
+.close-button::after { -webkit-transform:rotate(-45deg); transform:rotate(-45deg); }
+.close-button:hover { transform:rotate(180deg) }
+
+.menu-wrap { width:300px; height:100%; position:fixed; z-index:1001; font-size:1.15em; -webkit-transform:translate3d(-300px,0,0); transform:translate3d(-300px,0,0); -webkit-transition:-webkit-transform 0.3s; transition:transform 0.3s; }
+.menu-wrap a { text-decoration:none; }
+
+.icon-list { width:280px; }
+.icon-list a { padding:0.8em; display:block; }
+.icon-list a span { margin-left:10px; font-size:0.75em; font-weight:700; letter-spacing:0; text-transform:uppercase; }
+
+/* Morph Shape */
+.morph-shape { width:50px; height:100%; fill:#3d4c5a; position:absolute; top:0; right:0; z-index:1000; }
+
+/* Shown menu */
+.show-menu .menu-wrap { -webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); }
+.show-menu .conteudo { -webkit-transition-delay:.1s; transition-delay:.1s; -webkit-transform:translate3d(300px,0,0); transform:translate3d(300px,0,0); }
+.show-menu .conteudo-all::before { opacity:1; -webkit-transition:opacity 0.3s; transition:opacity 0.3s; -webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); }
+
+header .usuario a { width:auto; height:80px; padding:0 10px; border-left:1px solid #ddd; border-right:1px solid #ddd; display:flex; text-decoration:none; float:right; }
+header .usuario a figure { width:60px; height:60px; padding:2px; margin:10px; background:#ccc; border-radius:100px; }
+header .usuario a p { line-height:80px; font-size:15px; font-weight:300; color:rgba(0, 0, 0, .5); }
+
+header .logout a { padding:0 30px; display:flex; text-decoration:none; float:right; }
+header .logout a i { line-height:80px; font-size:25px; color:rgba(0, 0, 0, .5); }
+
+
+/*************************************************
+********************* MENU ***********************
+*************************************************/
+.menu-bg { width:100%; height:100%; padding:40px 18px 0 0; background:#3d4c5a; }
+.menu-bg svg { width:40%; margin:0px 30% 30px 30%; display:block; }
+
+.menu { width:100%; padding:0 10px; height:calc(100% - 10px); position:relative; z-index:1060; overflow-y:scroll; }
+.menu .panel-default { background:none; border:none; box-shadow:none; }
+.menu .panel-default>.panel-heading { padding:0; background:none; border:none; color:#FFF!important; }
+.menu .panel-title a.collapsed { color:#bcbcc0; }
+.menu .panel-title a { width:100%; padding:20px 10px; background:#333f4a; font-size:14px; font-weight:500; color:#bcbcc0; text-transform:uppercase; display:block; }
+.menu .panel-title a i { padding:0 15px; display:inline-block; }
+.menu .panel-title a p { margin:0; display:inline-block; }
+.menu .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body { border:none!important; box-shadow:none; }
+
+.menu .panel-body { padding:15px 0; }
+.menu .panel-body ul li { width:100%; display:block; }
+.menu .panel-body ul li a { width:100%; padding:15px 10px; margin-bottom:10px; border:1px solid #455565; color:#e6e6e6; display:block; transition:all .3s; }
+.menu .panel-body ul li a i { padding-right:10px; font-size:15px; display:inline-block; }
+.menu .panel-body ul li a p { padding:0; margin:0; display:inline-block; font-weight:200; font-size:13px; text-transform:uppercase; }
+.menu .panel-body ul li a:hover { background:#333f4a; border-color:#485663; }
+.menu .panel-body ul li a:hover i { color:#FFF; }
+.menu .panel-body ul li a:hover p { color:#FFF; }
+
+
+/*************************************************
+****************** BREADCRUMB ********************
+*************************************************/
+.breadcrumb { padding:15px 25px; margin-bottom:20px; list-style:none; background-color:#FFF; border-bottom:1px solid #ddd; font-size:14px; font-weight:200; letter-spacing:1px; position:relative; }
+.breadcrumb>.active { color:#3d4c5a; }
+.breadcrumb li a { color:#777; text-decoration:none; }
+.breadcrumb li a:hover { color:#3d4c5a; }
+
+a.refresh { background:#f7f7f7; padding:15px; position:absolute; right:0; top:0; font-size:20px; color:#b9b9b9; transition:all .5s }
+a.refresh i { transition:all 3s; }
+a.refresh:hover { background:#3d4c5a; color:#FFF; }
+a.refresh:hover i { transform:rotate(360deg); color:#FFF; }
+
+
+
