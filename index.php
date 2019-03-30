@@ -8,13 +8,17 @@
 </head>
 <body style="background: #232323;">
 
-	<div class="mapa" data-component="mapa" data-url="empreendimentos.php" data-latlng="-27.13348769,-48.60513994" style="margin-bottom: 300px">
+	<div class="mapa" data-component="mapa" data-url="empreendimentos.php" data-latlng="-27.13348769,-48.60513994">
 		<div class="mapa_mapa"></div>
 
 		<div class="mapa_info is-updating">
-			<div class="mapa_info-titulo"></div>
-			<div class="mapa_info-subtitulo"></div>
-			<div class="mapa_info-endereco"></div>
+			<div class="mapa_info-titulo">ciprianos office</div>
+			<!-- <div class="mapa_info-subtitulo"></div> -->
+			<div class="mapa_info-endereco">
+				Rua 202<br>
+				Meia Praia<br>
+				<small>Itapema ---- SC</small>
+			</div>
 			<div class="mapa_fotos">
 				<div class="mapa_scene" id="scene">
 					<div class="mapa_scene_cloud-1 -bg" data-depth="0.2"></div>
@@ -23,6 +27,7 @@
 					<div class="mapa_scene_birds -bg" data-depth="0.1"></div>
 				</div>
 				<div class="owl-carousel owl-theme">
+					<div class='item' style='background-image:url(imagens/dmarco-fachada.png)'></div>
 					<div class='item' style='background-image:url(imagens/dmarco-fachada.png)'></div>
 				</div>
 			</div>

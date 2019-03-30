@@ -1,0 +1,576 @@
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedRegular.woff2') format('woff2'),
+        url('Fixture-CondensedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedBlack.woff2') format('woff2'),
+        url('Fixture-ExpandedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-Regular.woff2') format('woff2'),
+        url('Fixture-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded ExLight';
+    src: url('FixtureItalic-ExpandedExtraLight.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedBold.woff2') format('woff2'),
+        url('Fixture-ExpandedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedThin.woff2') format('woff2'),
+        url('Fixture-ExpandedThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedSemiBold.woff2') format('woff2'),
+        url('Fixture-ExpandedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedBold.woff2') format('woff2'),
+        url('Fixture-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-ExtraBold.woff2') format('woff2'),
+        url('FixtureItalic-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedMedium.woff2') format('woff2'),
+        url('Fixture-CondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-Bold.woff2') format('woff2'),
+        url('FixtureUltra-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-SemiBold.woff2') format('woff2'),
+        url('FixtureUltraItalic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-Light.woff2') format('woff2'),
+        url('Fixture-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-ExtraBold.woff2') format('woff2'),
+        url('FixtureUltra-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-SemiBold.woff2') format('woff2'),
+        url('Fixture-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedThin.woff2') format('woff2'),
+        url('Fixture-CondensedThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-SemiBold.woff2') format('woff2'),
+        url('FixtureUltra-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded';
+    src: url('FixtureItalic-ExpandedBlack.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedExtraLight.woff2') format('woff2'),
+        url('Fixture-ExpandedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed';
+    src: url('FixtureItalic-CondensedLight.woff2') format('woff2'),
+        url('FixtureItalic-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-Black.woff2') format('woff2'),
+        url('Fixture-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded SmBold';
+    src: url('FixtureItalic-ExpandedSemiBold.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedMedium.woff2') format('woff2'),
+        url('Fixture-ExpandedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-Bold.woff2') format('woff2'),
+        url('Fixture-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-Black.woff2') format('woff2'),
+        url('FixtureUltraItalic-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedExtraLight.woff2') format('woff2'),
+        url('Fixture-CondensedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Cond ExLight';
+    src: url('FixtureItalic-CondensedExtraLight.woff2') format('woff2'),
+        url('FixtureItalic-CondensedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-Medium.woff2') format('woff2'),
+        url('FixtureItalic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-Black.woff2') format('woff2'),
+        url('FixtureItalic-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedExtraBold.woff2') format('woff2'),
+        url('Fixture-ExpandedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-Light.woff2') format('woff2'),
+        url('FixtureUltraItalic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-Medium.woff2') format('woff2'),
+        url('Fixture-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded';
+    src: url('FixtureItalic-ExpandedRegular.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedBlack.woff2') format('woff2'),
+        url('Fixture-CondensedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded';
+    src: url('FixtureItalic-ExpandedThin.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedThin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded ExBold';
+    src: url('FixtureItalic-ExpandedExtraBold.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-ExtraLight.woff2') format('woff2'),
+        url('FixtureUltraItalic-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-Thin.woff2') format('woff2'),
+        url('FixtureItalic-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-ExtraBold.woff2') format('woff2'),
+        url('Fixture-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-Bold.woff2') format('woff2'),
+        url('FixtureItalic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-Regular.woff2') format('woff2'),
+        url('FixtureUltra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-Regular.woff2') format('woff2'),
+        url('FixtureUltraItalic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed';
+    src: url('FixtureItalic-CondensedThin.woff2') format('woff2'),
+        url('FixtureItalic-CondensedThin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-Regular.woff2') format('woff2'),
+        url('FixtureItalic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded';
+    src: url('FixtureItalic-ExpandedMedium.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed';
+    src: url('FixtureItalic-CondensedRegular.woff2') format('woff2'),
+        url('FixtureItalic-CondensedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-SemiBold.woff2') format('woff2'),
+        url('FixtureItalic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-Bold.woff2') format('woff2'),
+        url('FixtureUltraItalic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-ExtraLight.woff2') format('woff2'),
+        url('Fixture-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-Thin.woff2') format('woff2'),
+        url('FixtureUltraItalic-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedLight.woff2') format('woff2'),
+        url('Fixture-ExpandedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed';
+    src: url('FixtureItalic-CondensedBlack.woff2') format('woff2'),
+        url('FixtureItalic-CondensedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-ExtraBold.woff2') format('woff2'),
+        url('FixtureUltraItalic-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-Light.woff2') format('woff2'),
+        url('FixtureUltra-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-ExtraLight.woff2') format('woff2'),
+        url('FixtureItalic-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded';
+    src: url('FixtureItalic-ExpandedBold.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed';
+    src: url('FixtureItalic-CondensedBold.woff2') format('woff2'),
+        url('FixtureItalic-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Cond';
+    src: url('FixtureItalic-CondensedSemiBold.woff2') format('woff2'),
+        url('FixtureItalic-CondensedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-ExtraLight.woff2') format('woff2'),
+        url('FixtureUltra-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-Black.woff2') format('woff2'),
+        url('FixtureUltra-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('Fixture-Thin.woff2') format('woff2'),
+        url('Fixture-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-Medium.woff2') format('woff2'),
+        url('FixtureUltra-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture';
+    src: url('FixtureItalic-Light.woff2') format('woff2'),
+        url('FixtureItalic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedSemiBold.woff2') format('woff2'),
+        url('Fixture-CondensedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltra-Thin.woff2') format('woff2'),
+        url('FixtureUltra-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Ultra';
+    src: url('FixtureUltraItalic-Medium.woff2') format('woff2'),
+        url('FixtureUltraItalic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedLight.woff2') format('woff2'),
+        url('Fixture-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Expanded';
+    src: url('FixtureItalic-ExpandedLight.woff2') format('woff2'),
+        url('FixtureItalic-ExpandedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Condensed';
+    src: url('Fixture-CondensedExtraBold.woff2') format('woff2'),
+        url('Fixture-CondensedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed ExBold';
+    src: url('FixtureItalic-CondensedExtraBold.woff2') format('woff2'),
+        url('FixtureItalic-CondensedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Italic Condensed';
+    src: url('FixtureItalic-CondensedMedium.woff2') format('woff2'),
+        url('FixtureItalic-CondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fixture Expanded';
+    src: url('Fixture-ExpandedRegular.woff2') format('woff2'),
+        url('Fixture-ExpandedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

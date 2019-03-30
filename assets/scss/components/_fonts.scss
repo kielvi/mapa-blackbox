@@ -1,0 +1,578 @@
+$fontPath: "../fonts/";
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedRegular.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedBlack.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedBlack.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-Regular.woff2') format('woff2'),
+	url($fontPath+'Fixture-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded ExLight';
+	src: url($fontPath+'FixtureItalic-ExpandedExtraLight.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedThin.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedThin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedSemiBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedSemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-ExtraBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedMedium.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-Bold.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-SemiBold.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-Light.woff2') format('woff2'),
+	url($fontPath+'Fixture-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-ExtraBold.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-SemiBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedThin.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedThin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-SemiBold.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded';
+	src: url($fontPath+'FixtureItalic-ExpandedBlack.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedBlack.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedExtraLight.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed';
+	src: url($fontPath+'FixtureItalic-CondensedLight.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedLight.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-Black.woff2') format('woff2'),
+	url($fontPath+'Fixture-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded SmBold';
+	src: url($fontPath+'FixtureItalic-ExpandedSemiBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedSemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedMedium.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-Bold.woff2') format('woff2'),
+	url($fontPath+'Fixture-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-Black.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedExtraLight.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Cond ExLight';
+	src: url($fontPath+'FixtureItalic-CondensedExtraLight.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-Medium.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-Black.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedExtraBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-Light.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-Medium.woff2') format('woff2'),
+	url($fontPath+'Fixture-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded';
+	src: url($fontPath+'FixtureItalic-ExpandedRegular.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedBlack.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedBlack.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded';
+	src: url($fontPath+'FixtureItalic-ExpandedThin.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedThin.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded ExBold';
+	src: url($fontPath+'FixtureItalic-ExpandedExtraBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-ExtraLight.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-Thin.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-ExtraBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-Bold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-Regular.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-Regular.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed';
+	src: url($fontPath+'FixtureItalic-CondensedThin.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedThin.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-Regular.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded';
+	src: url($fontPath+'FixtureItalic-ExpandedMedium.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed';
+	src: url($fontPath+'FixtureItalic-CondensedRegular.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-SemiBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-Bold.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-ExtraLight.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-Thin.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedLight.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed';
+	src: url($fontPath+'FixtureItalic-CondensedBlack.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedBlack.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-ExtraBold.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-Light.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-ExtraLight.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded';
+	src: url($fontPath+'FixtureItalic-ExpandedBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedBold.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed';
+	src: url($fontPath+'FixtureItalic-CondensedBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedBold.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Cond';
+	src: url($fontPath+'FixtureItalic-CondensedSemiBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedSemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-ExtraLight.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-Black.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'Fixture-Thin.woff2') format('woff2'),
+	url($fontPath+'Fixture-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-Medium.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture';
+	src: url($fontPath+'FixtureItalic-Light.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedSemiBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedSemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltra-Thin.woff2') format('woff2'),
+	url($fontPath+'FixtureUltra-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Ultra';
+	src: url($fontPath+'FixtureUltraItalic-Medium.woff2') format('woff2'),
+	url($fontPath+'FixtureUltraItalic-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedLight.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Expanded';
+	src: url($fontPath+'FixtureItalic-ExpandedLight.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-ExpandedLight.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Condensed';
+	src: url($fontPath+'Fixture-CondensedExtraBold.woff2') format('woff2'),
+	url($fontPath+'Fixture-CondensedExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed ExBold';
+	src: url($fontPath+'FixtureItalic-CondensedExtraBold.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Italic Condensed';
+	src: url($fontPath+'FixtureItalic-CondensedMedium.woff2') format('woff2'),
+	url($fontPath+'FixtureItalic-CondensedMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fixture Expanded';
+	src: url($fontPath+'Fixture-ExpandedRegular.woff2') format('woff2'),
+	url($fontPath+'Fixture-ExpandedRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+

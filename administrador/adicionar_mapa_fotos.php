@@ -17,8 +17,8 @@ if($acao=="editar") { $row = mysql_fetch_object(mysql_query("SELECT * FROM $nome
 
 		<div class="col-md-12 mt-2">
 			<div class="alert alert-warning" role="alert">
-				<strong>Foto (JPG ou PNG):</strong><br>
-				Tamanho: 1800x1012 pixels ou maior seguindo a mesma proporção
+				<strong>Foto (PNG):</strong><br>
+				Tamanho: 735x555px ou maior seguindo a mesma proporção
 			</div>
 		</div>
 
@@ -29,7 +29,7 @@ if($acao=="editar") { $row = mysql_fetch_object(mysql_query("SELECT * FROM $nome
 				<div class="row">
 					<div class="col-md-5 form-group">
 						<label for="foto">Foto</label>
-						<input type="file" id="foto" name="foto" data-codigo="<?php echo $row->codigo; ?>" data-tabela="<?php echo $nomeDaPagina; ?>" class="dropify dropify-foto" <?php echo ($row->foto<>'' ? "data-default-file='../$row->foto'" : ''); ?> data-max-file-size="2M" data-allowed-file-extensions="png, jpg" />
+						<input type="file" id="foto" name="foto" data-codigo="<?php echo $row->codigo; ?>" data-tabela="<?php echo $nomeDaPagina; ?>" class="dropify dropify-foto" <?php echo ($row->foto<>'' ? "data-default-file='../$row->foto'" : ''); ?> data-max-file-size="2M" data-allowed-file-extensions="png" />
 					</div>
 
 					<div class="col-md-7 form-group">

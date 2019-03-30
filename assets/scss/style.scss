@@ -1,6 +1,14 @@
-html, body{
-	margin: 0;
-	padding: 0;
+@import 'components/fonts';
+@import 'mapa';
+
+body {
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background 200ms 150ms ease-out, margin-left 140ms 150ms ease-out;
+	font: {
+		family: 'Fixture Expanded';
+		weight: normal;
+	}
 }
 
-@import 'mapa';
