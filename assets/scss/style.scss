@@ -1,7 +1,15 @@
 @import 'components/fonts';
+
+@import 'pages/nav';
+@import 'pages/footer';
+
 @import 'mapa';
 
+
 body {
+	background: #232323;
+	padding: 0;
+	margin: 0;
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

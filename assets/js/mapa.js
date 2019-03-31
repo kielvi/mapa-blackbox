@@ -99,8 +99,8 @@ var parallaxInstance = new Parallax(scene, {
 				$(self.fotos).owlCarousel('destroy');
 				$(self.fotos).html(
 					_this.data.images.map(function(img){
-						/*return "<div class='item' style='background-image:url("+img+")'></div>";*/
-						return "<div class='item' style='background-image:url(imagens/dmarco-fachada.png)'></div>";
+						return "<div class='item' style='background-image:url("+img+")'></div>";
+						/*return "<div class='item' style='background-image:url(imagens/dmarco-fachada.png)'></div>";*/
 					}).join('')
 				).owlCarousel({items:1});
 				$('.mapa_info-endereco', self.info).html( _this.data.address );

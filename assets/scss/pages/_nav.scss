@@ -1,0 +1,40 @@
+.nav {
+
+	&_logo {
+		width: 93px;
+		height: 50px;
+		position: absolute;
+		top: 72px;
+		right: 122px;
+		z-index: 1;
+		background: {
+			image: url('../img/header-logo-gray.png');
+			position: center;
+			size: contain;
+		}
+
+		&:before {
+			width: 100%;
+			height: 100%;
+			content: "";
+			background: {
+				image: url('../img/header-logo.png');
+				position: center;
+				size: contain;
+			}
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: opacity 300ms ease-out;
+		}
+
+		&:hover {
+			&:before {
+				opacity: 1;
+				transition: opaticy 500ms ease-in;
+			}
+		}
+	}
+
+}

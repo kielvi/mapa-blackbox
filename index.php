@@ -6,7 +6,13 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 </head>
-<body style="background: #232323;">
+<body>
+	<header>
+		<div class="nav">
+			<a href="./" class="nav_logo" title="Mídia Black Box"></a>
+		</div>
+	</header>
+
 
 	<div class="mapa" data-component="mapa" data-url="empreendimentos.php" data-latlng="-27.13348769,-48.60513994">
 		<div class="mapa_mapa"></div>
@@ -38,7 +44,20 @@
 			<div class="mapa_popup-subtitulo"></div>
 		</div>
 	</div>
-	
+
+	<footer class="footer">
+		<div class="footer_contact">Entre em contato conosco.</div>
+		<ul class="footer_socials">
+			<li class="footer_social"><a href="https://www.facebook.com/midiablackbox" class="-facebook" target="_blank" title="Curta nossa página no Facebook, estamos sempre publicando coisas incríveis que nossa equipe está desenvolvendo."> </a></li>
+			<li class="footer_social"><a href="https://www.instagram.com/midiablackbox/" class="-instagram" target="_blank" title="Siga-nos no instagram, estamos sempre publicando coisas incríveis que nossa equipe está desenvolvendo."> </a></li>
+		</ul>
+		<div class="footer_info">
+			<div class="footer_info_item"><strong>Mídia Black Box</strong></div>
+			<div class="footer_info_item"><small>+55 47</small> 99959-6900</div>
+			<div class="footer_info_item">midiablackbox.com.br</div>
+ 			<div class="footer_info_item"><strong>contato@midiablackbox.com.br</strong></div>
+		</div>
+	</footer>	
 
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
