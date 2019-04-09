@@ -20,7 +20,7 @@
 
 .mapa {
 	width: 100vw;
-	height: calc(100vh - 160px);
+	height: 100vh;
 	position: relative;
 	font-family: 'Lato', Futura, Trebuchet MS, Arial, sans-serif;
 	color: white;
@@ -80,9 +80,11 @@
 					transition: all 200ms ease-out;
 				}
 
-				&_info-subtitulo{
-					transform: translateY( 20px );
-					transition: all 0ms linear 500ms, opacity 200ms ease-out;
+				&_info {
+					&-titulo, &-subtitulo, &-endereco {
+						transform: translateY( 20px );
+						transition: all 0ms linear 500ms, opacity 200ms ease-out;
+					}
 				}
 			}
 		}
@@ -91,7 +93,7 @@
 		&-titulo,
 		&-subtitulo,
 		&-endereco{
-			position: relative;
+			position: absolute;
 			z-index: 2;
 			width: 100%;
 			text-align: center;
@@ -100,8 +102,8 @@
 		}
 
 		&-titulo {
-			max-width: 240px;
-			margin-top: 64px;
+			max-width: 100%;
+			top: 64px;
 			font: {
 				family: 'Fixture Expanded';
 				size: 26px;
@@ -110,17 +112,32 @@
 			color: #696969;
 			line-height: 24px;
 			text-transform: uppercase;
-			left: 50%;
-			transform: translateX(-50%);
 			transition-delay: 1200ms;
+		}
+		&-subtitulo {
+			max-width: 100%;
+			top: 89px;
+			font: {
+				family: 'Fixture Expanded';
+				size: 26px;
+				weight: 500;
+			}
+			color: #696969;
+			line-height: 24px;
+			text: {
+				align: center;
+				transform: uppercase;
+			}
+			left: 0;
+			transform: none;
+			transition-delay: 1400ms;
 		}
 
 
 		&-endereco {
-			max-width: 240px;
-			margin-top: 26px;
-			left: 50%;
-			transform: translateX(-50%);
+			max-width: 100%;
+			top: 128px;
+
 
 			font: {
 				family: 'Fixture Expanded';
@@ -159,7 +176,7 @@
 
 	&_scene {
 		width: 100%;
-		height: calc(70vh - 160px);
+		height: 70vh;
 		margin-top: 30vh;
 		position: absolute;
 		z-index: 1;
@@ -237,9 +254,9 @@
 		.owl-carousel{
 			.item{ 
 				margin-top: 30vh;
-				height: calc(70vh - 160px);
+				height: 70vh;
 				background: top center no-repeat;
-				background-size: contain;
+				background-size: cover;
 			}
 			.owl-dots{
 		    position: absolute;

@@ -15,8 +15,10 @@ try {
 		$data[$i]["lng"] = $row_mapa->lng;
 		$data[$i]["data"]["title"] = "$row_mapa->titulo";
 		$data[$i]["data"]["subtitle"] = "$row_mapa->subtitulo";
-		$data[$i]["data"]["address"] = "$row_mapa->endereco, $row_mapa->numero - $row_mapa->bairro - $row_mapa->cidade/$row_mapa->estado";
-
+		$data[$i]["data"]["address"] = "$row_mapa->endereco<br>$row_mapa->bairro<br>$row_mapa->cidade -- $row_mapa->estado";
+/*
+$row_mapa->numero
+ */
 		$data[$i]["data"]["images"] = array();
 		$query_fotos = mysql_query("SELECT * FROM mapa_fotos WHERE cod_mapa='$row_mapa->codigo' ORDER BY ordem ASC");
 		while($row_foto = mysql_fetch_object($query_fotos)) {

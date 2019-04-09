@@ -18,12 +18,9 @@
 		<div class="mapa_mapa"></div>
 
 		<div class="mapa_info is-updating">
-			<div class="mapa_info-titulo">ciprianos office</div>
-			<!-- <div class="mapa_info-subtitulo"></div> -->
+			<div class="mapa_info-titulo"></div>
+			<div class="mapa_info-subtitulo"></div>
 			<div class="mapa_info-endereco">
-				Rua 202<br>
-				Meia Praia<br>
-				<small>Itapema ---- SC</small>
 			</div>
 			<div class="mapa_fotos">
 				<div class="mapa_scene" id="scene">
